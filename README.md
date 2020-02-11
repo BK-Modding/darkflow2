@@ -51,6 +51,8 @@ You can choose _one_ of the following three ways to get started with darkflow.
     pip install .
     ```
 
+**NOTE THAT CALLING DARKFLOW USING `flow` does not work on Windows. The issue will be resolved in later releases**
+
 ## Update
 
 **Android demo on YOLO Detector using Tensorflow** [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorFlowYoloDetector.java)
