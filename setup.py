@@ -5,7 +5,7 @@ import numpy
 import os
 import imp
 
-VERSION = imp.load_source('version', os.path.join('.', 'darkflow', 'version.py'))
+VERSION = imp.load_source('version', os.path.join('.', 'darkflow2', 'version.py'))
 VERSION = VERSION.__version__
 
 if os.name =='nt' :
@@ -64,10 +64,10 @@ else :
 
 setup(
     version=VERSION,
-	name='darkflow',
-    description='Darkflow',
+	name='darkflow2',
+    description='Darkflow2',
     license='GPLv3',
-    url='https://github.com/thtrieu/darkflow',
+    url='https://github.com/BK-Modding/darkflow2',
     packages = find_packages(),
 	scripts = ['flow'],
     ext_modules = cythonize(ext_modules)
