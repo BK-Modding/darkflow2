@@ -1,11 +1,28 @@
 ## Intro
 
-[![Build Status](https://travis-ci.org/thtrieu/darkflow.svg?branch=master)](https://travis-ci.org/thtrieu/darkflow) [![codecov](https://codecov.io/gh/thtrieu/darkflow/branch/master/graph/badge.svg)](https://codecov.io/gh/thtrieu/darkflow)
+Real-time object detection and classification for tensorflow v2.0. This package is an implementation of darknet's algorithms using the latest tensorflow version. Based on [thtrieu's darkflow library](https://github.com/thtrieu/darkflow) for tensorflow v1.0. Changes from the original include:
+- Replaced tensorflow imports with the backward compatible `tf.compat.v1`.
+- Replaced the now-deprecated slim module with keras.
 
-Real-time object detection and classification. Paper: [version 1](https://arxiv.org/pdf/1506.02640.pdf), [version 2](https://arxiv.org/pdf/1612.08242.pdf).
+That's it. The rest of the package is exactly the same.
 
-Read more about YOLO (in darknet) and download weight files [here](http://pjreddie.com/darknet/yolo/). In case the weight file cannot be found, I uploaded some of mine [here](https://drive.google.com/drive/folders/0B1tW_VtY7onidEwyQ2FtQVplWEU), which include `yolo-full` and `yolo-tiny` of v1.0, `tiny-yolo-v1.1` of v1.1 and `yolo`, `tiny-yolo-voc` of v2.
+### A little backstory
 
+I noticed that thtrieu's brilliant darkflow project was not compatible with the latest tensorflow because it surprisingly wasn't being maintained actively. The latest commit as of writing this was 2-3 years ago  and none of the pull requests since then were reviewed or merged. So I took it upon myself to create a fork that works with tf v2 but stays as close to the original as possible. 
+
+### Changes Planned
+- Rewrite code using tensorflow v2.0 instead of using `tf.compat.v1` to enable backward compatibility.
+- Implement yolov3 and other object detection algorithms.
+- Make `flow` executable work on Windows cmd/powershell.
+- Rewrite the way arguments are taken as inputs.
+
+## Background Information
+
+A research paper on what YOLO is about:
+- [version 1](https://arxiv.org/pdf/1506.02640.pdf)
+- [version 2](https://arxiv.org/pdf/1612.08242.pdf)
+
+Read more about YOLO (in darknet) and download weight files [here](http://pjreddie.com/darknet/yolo/). In case the weight file cannot be found, Some of thtrieu's original weight files can be found [here](https://drive.google.com/drive/folders/0B1tW_VtY7onidEwyQ2FtQVplWEU), which include `yolo-full` and `yolo-tiny` of v1.0, `tiny-yolo-v1.1` of v1.1 and `yolo`, `tiny-yolo-voc` of v2.
 
 See demo below or see on [this imgur](http://i.imgur.com/EyZZKAA.gif)
 
@@ -13,7 +30,7 @@ See demo below or see on [this imgur](http://i.imgur.com/EyZZKAA.gif)
 
 ## Dependencies
 
-Python3, tensorflow 1.0, numpy, opencv 3.
+Python3, tensorflow 2, numpy, opencv 3, keras, pytest, requests, Cython
 
 ### Getting started
 
@@ -37,9 +54,6 @@ You can choose _one_ of the following three ways to get started with darkflow.
 ## Update
 
 **Android demo on Tensorflow's** [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorFlowYoloDetector.java)
-
-**I am looking for help:**
- - `help wanted` labels in issue track
 
 ## Parsing the annotations
 
