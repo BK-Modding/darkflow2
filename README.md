@@ -8,7 +8,7 @@ That's it. The rest of the package is exactly the same.
 
 ### A little backstory
 
-I noticed that thtrieu's brilliant darkflow project was not compatible with the latest tensorflow because it surprisingly wasn't being maintained actively. The latest commit as of writing this was 2-3 years ago  and none of the pull requests since then were reviewed or merged. So I took it upon myself to create a fork that works with tf v2 but stays as close to the original as possible. 
+I noticed that thtrieu's brilliant darkflow project was not compatible with the latest tensorflow because surprisingly it wasn't being maintained actively. The latest commit as of writing this was 2-3 years ago  and none of the pull requests since then were reviewed or merged. So I took it upon myself to create a fork that works with tf v2 but stays as close to the original as possible. 
 
 ### Changes Planned
 - Rewrite code using tensorflow v2.0 instead of using `tf.compat.v1` to enable backward compatibility.
