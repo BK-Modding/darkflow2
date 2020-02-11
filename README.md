@@ -16,7 +16,7 @@ I noticed that thtrieu's brilliant darkflow project was not compatible with the 
 - Make `flow` executable work on Windows cmd/powershell.
 - Rewrite the way arguments are taken as inputs.
 
-## Background Information
+## Some Background Info
 
 A research paper on what YOLO is about:
 - [version 1](https://arxiv.org/pdf/1506.02640.pdf)
