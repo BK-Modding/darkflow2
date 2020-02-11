@@ -53,7 +53,7 @@ You can choose _one_ of the following three ways to get started with darkflow.
 
 ## Update
 
-**Android demo on Tensorflow** [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorFlowYoloDetector.java)
+**Android demo on YOLO Detector using Tensorflow** [here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorFlowYoloDetector.java)
 
 ## Parsing the annotations
 
