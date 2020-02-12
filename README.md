@@ -15,6 +15,7 @@ I noticed that thtrieu's brilliant darkflow project was not compatible with the 
 - Implement yolov3 and other object detection algorithms.
 - Make `flow` executable work on Windows cmd/powershell.
 - Rewrite the way arguments are taken as inputs.
+- Add darkflow2 to pypa and pip. 
 
 ## Some Background Info
 
