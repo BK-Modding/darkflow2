@@ -18,5 +18,5 @@ install:
 script: pytest -x --cov=./
 
 #Upload code coverage statistics
-after_success:
-  - codecov
+# after_success:
+#   - codecov
